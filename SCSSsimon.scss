@@ -1,0 +1,103 @@
+html {
+  height: 100%;
+}
+body {
+  background: linear-gradient(to top, cornflowerblue, black) no-repeat;
+  font-family: monospace;
+  text-align: center;
+  height: 100%;
+
+}
+.container {
+  height: 50%;
+  flex-grow: 3;
+  display: flex;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+.note {
+  border-radius: 4em;
+  width: 100px;
+  height: 70%;
+  margin: 10px;
+  transition: 0.5s;
+  &:hover {
+    opacity: 0.5;
+    background-color: lightsteelblue;
+  }
+}
+
+.note.activeNote {
+  &:hover {
+    opacity: 1;
+  }
+}
+
+
+
+.note-a {
+  background-color: lightblue;
+
+}
+
+.note-b {
+  background-color: yellowgreen;
+}
+
+.note-c {
+  background-color: yellow;
+}
+
+.note-d {
+  background-color: orange;
+}
+
+.note-e {
+  background-color: darkred;
+}
+
+.activeNote {
+  background-color: rosybrown;
+}
+
+footer {
+  background-color:indianred;
+  position: fixed;
+  bottom: 20px;
+  font-size: 2em;
+}
+#nav {
+  height: auto;
+  display: inline-block;
+  margin: auto;
+
+
+}
+header {
+  color: whitesmoke;
+  font-size: 3em;
+  font-weight: bold;
+  margin: 10px;
+
+}
+.button {
+  margin: 30px;
+  width: 14em;
+  height: 3em;
+  border-radius: 1em;
+  border: inset indianred;
+  background-color: indianred;
+  font-family: inherit;
+  font-weight: 600;
+}
+.gameover {
+  font-size: 4em;
+  font-weight: 700;
+  color: white;
+  transition: 0.5s;
+}
+.hide {
+  opacity: 0;
+  //transition: 0.5s;
+}
