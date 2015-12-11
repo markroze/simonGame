@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="SCSSsimon.css"/>
+    <title></title>
+</head>
+<body>
+<header id="header">Simon by Mark Rozovsky</header>
+    <div class="container">
+        <div id="note-a" class="note note-a" onclick="noteClicked('a')" id="1"></div>
+        <div id="note-b" class="note note-b" onclick="noteClicked('b')" id="2"></div>
+        <div id="note-c" class="note note-c" onclick="noteClicked('c')" id="3"></div>
+        <div id="note-d" class="note note-d" onclick="noteClicked('d')" id="4"></div>
+        <div id="note-e" class="note note-e" onclick="noteClicked('e')" id="5"></div>
+    </div>
+<div id="nav">
+    <button class="button" onclick="initGame()">Start Game</button>
+</div>
+<div class="gameover hide">Game Over!!</div>
+<footer id="footer" >Created in the facilities of the Coding Academy</footer>
+
+<script src="simonJS.js"></script>
+</body>
+</html>
